@@ -93,7 +93,7 @@ details = details.replace(' ','').split()
 **'导演:弗兰克·德拉邦特		主演:让·雷诺/娜塔莉·波特曼/加里·奥德曼		类型: 剧情/动作/犯罪		制片国家/地区:法国		年份:1994'**
 
 
-第二次使用分片split()后，details就变成了一个list，即
+第二次使用split()后，details就变成了一个list，即
 
 
 **['导演:弗兰克·德拉邦特','主演:让·雷诺/娜塔莉·波特曼/加里·奥德曼',		'类型: 剧情/动作/犯罪','制片国家/地区:法国','年份:1994']**
@@ -146,5 +146,5 @@ item.year = details[4].split(':')[1]
 ![这里写图片描述](http://img.blog.csdn.net/20170819225345874?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
-**最后这是我的第一篇博文，如有缺漏或者错误之处，还请各位海涵，并帮我指出错误。谢谢！！！*
+**最后这是我的第一篇博文，如有缺漏或者错误之处，还请各位海涵，并帮我指出错误。谢谢！！！**
 
