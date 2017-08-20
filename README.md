@@ -3,7 +3,7 @@
 **python强大的第三方module，使他成为网络爬虫和各种数据分析的首选工具.**
 
 ## 工具
-安装了pev的eclipse(具体的安装pev和使用方式请百度或者Google)，如果你习惯用sublime text，可以使用sublime编辑，然后在eclipse上编译运行
+安装了pydev的eclipse(具体的安装pev和使用方式请百度或者Google)，如果你习惯用sublime text，可以使用sublime编辑，然后在eclipse上编译运行
 
 ## 步骤
 
