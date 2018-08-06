@@ -9,9 +9,8 @@
 
 1.爬取网页[豆瓣高分电影榜](https://www.douban.com/doulist/240962/?start=0&sort=seq&sub_type=)的内容
 
-根据网页上的信息
-
-![image](http://img.blog.csdn.net/20170819181832238?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+根据网页上的信息  
+![](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/1.png)
 
 我们建立一个DouBanItem的类，把要爬取的项目列出来，这里我是这样设置的
 
@@ -38,23 +37,24 @@ def spider(self,urls)
 def piplines(self,items)
 ```
 
-def getUrls(self)函数里面
+def getUrls(self)函数里面..
 
-![image](http://img.blog.csdn.net/20170819215531577?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![image](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/2.png)
 
-![image](http://img.blog.csdn.net/20170819215605590?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![image](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/3.png)
 
 我截取前两页的url，可以看出第一张和第二张的区别在于'start='后面的数字，说明每个url的间隔是一个step = 25
 
 
-![image](http://img.blog.csdn.net/20170819215936612?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![image](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/4.png)
 
 而这里总共有12页，所以问题就很简单了，构造一个urls = []，里面有12个url。
 具体的源码我会上传到github，大家可以自行下载参考。
 
 
 不过在spider函数里我遇到一个问题，想在这里和大家分享一下：
-在[](view-source:https://www.douban.com/doulist/240962/?start=0&sort=seq&sub_type=)(其中一个url的源代码)中,我要获取的item中包括这几个
+在(https://www.douban.com/doulist/240962/?start=0&sort=seq&sub_type=)
+(其中一个url的源代码)中,我要获取的item中包括这几个
 ```
 导演: 弗兰克·德拉邦特
 
@@ -131,29 +131,29 @@ item.year = details[4].split(':')[1]
 ----------------------------------
 **这是eclipse的框架图，没有把excel文件显示出来，我也不知道为什么...**
 
-![](http://img.blog.csdn.net/20170819225231033?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/5.png)
 
 ------------------------------------
 **这是在sublime text3上的框架图，(sublime 是我最喜欢的编辑器，没有之一)**
 
-![image](http://img.blog.csdn.net/20170819225251847?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/6.png)
 
 -----------------------------------
 
 **这是在文件里面的框架，这里显示的比较全面**
 
-![image](http://img.blog.csdn.net/20170819225317104?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![image](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/7.png)
 
 ------------------------------------
 **这是在sublime显示的txt文件部分数据，贴出来只是因为它比较好看**
 
-![image](http://img.blog.csdn.net/20170819225329987?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![image](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/8.png)
 
 
 ----------------------------
 **这是部分表格的数据**
 
-![image](http://img.blog.csdn.net/20170819225345874?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWmhhb2RpX1dlbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![image](https://github.com/zhaodi-Wen/DouBanMovie/blob/master/img/9.png)
 
 
 
